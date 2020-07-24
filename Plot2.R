@@ -35,6 +35,8 @@ df$date_time <- parse_date_time(  df$date_time , orders =  "d/m/y H:M:S")
 
 ########################################################################################################################################################################
 
+### Producing the graphic
+
 png( "Plot2.png" )
 
 plot(df$Global_active_power ~ df$date_time, type = "l" , xlab = "", ylab = "Global Active Power (Kilowatts)")
