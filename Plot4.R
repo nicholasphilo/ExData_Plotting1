@@ -37,7 +37,7 @@ df$date_time <- parse_date_time(  df$date_time , orders =  "d/m/y H:M:S")
 
 ### Producing plot
 
-png(  "plot4.png" , res =  )
+png(  "plot4.png" )
 
 par(  mfrow = c(2,2)  )
 
