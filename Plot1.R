@@ -34,3 +34,17 @@ df$date_time <- parse_date_time(  df$date_time , orders =  "d/m/y H:M:S")
 
 
 ########################################################################################################################################################################
+
+### Producing plot
+
+png(  "plot1.png"  )
+
+hist(  df$Global_active_power ,
+       col = "red" ,
+       xlab = "Golbal Active Power (Kilowatts)",
+       main = "Global Active Power"
+)
+
+dev.off()
+
+
